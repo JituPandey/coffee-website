@@ -4,13 +4,7 @@ A modern, responsive coffee shop website built with vanilla HTML, CSS, and JavaS
 
 ## 🚀 Live Demo
 
-[View Live Site](https://your-coffee-site.netlify.app) *(Replace with your actual deployment URL)*
-
-## 📸 Screenshots
-
-![Desktop View](./screenshots/desktop.png)
-![Mobile View](./screenshots/mobile.png)
-![Cart Feature](./screenshots/cart.png)
+[View Live Site](https://stellular-hummingbird-9ac132.netlify.app/)
 
 ## ✨ Features
 
