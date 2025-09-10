@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artisan Coffee - Premium coffee shop offering the finest blends and exceptional service. Visit us for the perfect coffee experience.">
+    <meta name="keywords" content="coffee, espresso, latte, cappuccino, artisan, premium coffee, cafe">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Artisan Coffee - Premium Coffee Experience">
+    <meta property="og:description" content="Crafted with passion, served with love. Experience the finest coffee blends at Artisan Coffee.">
+    <meta property="og:image" content="./images/og-image.jpg">
+    <meta property="og:url" content="https://artisan-coffee.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Artisan Coffee - Premium Coffee Experience">
+    <meta name="twitter:description" content="Crafted with passion, served with love.">
+    <meta name="twitter:image" content="./images/twitter-image.jpg">
+    
+    <title>Artisan Coffee - Premium Coffee Experience</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-enhanced.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script-enhanced.js" as="script">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-coffee" aria-hidden="true"></i>
+                <span>Artisan Coffee</span>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#menu" role="menuitem">Menu</a></li>
+                <li role="none"><a href="#testimonials" role="menuitem">Reviews</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle mobile menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Premium Coffee Experience</h1>
+                <p class="hero-subtitle">Crafted with passion, served with love</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" type="button">Order Now</button>
+                    <button class="btn btn-secondary" type="button">Our Story</button>
+                </div>
+            </div>
+            <div class="hero-image" aria-hidden="true">
+                <div class="coffee-cup">
+                    <div class="cup"></div>
+                    <div class="steam"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="about-title">Our Story</h2>
+                    <p>Bringing you the finest coffee experience since 1995</p>
+                </header>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Crafted to Perfection</h3>
+                        <p>At Artisan Coffee, we believe every cup tells a story. Our master roasters carefully select the finest beans from around the world, ensuring each blend delivers an exceptional taste experience.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-leaf" aria-hidden="true"></i>
+                                <span>100% Organic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-award" aria-hidden="true"></i>
+                                <span>Award Winning</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                <span>Made with Love</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image" aria-hidden="true">
+                        <div class="coffee-beans"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu" aria-labelledby="menu-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="menu-title">Our Menu</h2>
+                    <p>Discover our signature blends and artisan creations</p>
+                </header>
+                
+                <!-- Search will be dynamically inserted here by JavaScript -->
+                
+                <div class="menu-grid" role="grid">
+                    <article class="menu-card" role="gridcell">
+                        <div class="menu-image espresso" aria-hidden="true"></div>
+                        <div class="menu-content">
+                            <h3>Espresso</h3>
+                            <p>Rich and bold, our signature espresso blend</p>
+                            <span class="price" aria-label="Price: $3.50">$3.50</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-card" role="gridcell">
+                        <div class="menu-image latte" aria-hidden="true"></div>
+                        <div class="menu-content">
+                            <h3>Vanilla Latte</h3>
+                            <p>Smooth espresso with steamed milk and vanilla</p>
+                            <span class="price" aria-label="Price: $4.75">$4.75</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-card" role="gridcell">
+                        <div class="menu-image cappuccino" aria-hidden="true"></div>
+                        <div class="menu-content">
+                            <h3>Cappuccino</h3>
+                            <p>Perfect balance of espresso, steamed milk, and foam</p>
+                            <span class="price" aria-label="Price: $4.25">$4.25</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-card" role="gridcell">
+                        <div class="menu-image americano" aria-hidden="true"></div>
+                        <div class="menu-content">
+                            <h3>Americano</h3>
+                            <p>Classic espresso with hot water for a smooth taste</p>
+                            <span class="price" aria-label="Price: $3.75">$3.75</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-card" role="gridcell">
+                        <div class="menu-image mocha" aria-hidden="true"></div>
+                        <div class="menu-content">
+                            <h3>Mocha</h3>
+                            <p>Espresso with chocolate syrup and steamed milk</p>
+                            <span class="price" aria-label="Price: $5.00">$5.00</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-card" role="gridcell">
+                        <div class="menu-image cold-brew" aria-hidden="true"></div>
+                        <div class="menu-content">
+                            <h3>Cold Brew</h3>
+                            <p>Smooth and refreshing cold-brewed coffee</p>
+                            <span class="price" aria-label="Price: $4.50">$4.50</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonials-title">What Our Customers Say</h2>
+                    <p>Don't just take our word for it</p>
+                </header>
+                <div class="testimonials-slider" aria-live="polite" aria-atomic="true">
+                    <article class="testimonial active">
+                        <div class="stars" aria-label="5 out of 5 stars" role="img">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote>
+                            <p>"The best coffee in town! Their espresso is absolutely perfect, and the atmosphere is so welcoming."</p>
+                        </blockquote>
+                        <div class="customer">
+                            <div class="customer-avatar" aria-hidden="true">S</div>
+                            <div class="customer-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Coffee Enthusiast</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars" role="img">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote>
+                            <p>"Amazing quality and service. I come here every morning for my latte. Highly recommended!"</p>
+                        </blockquote>
+                        <div class="customer">
+                            <div class="customer-avatar" aria-hidden="true">M</div>
+                            <div class="customer-info">
+                                <h4>Mike Davis</h4>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars" role="img">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote>
+                            <p>"Their cold brew is exceptional! Perfect for hot summer days. Love the cozy atmosphere too."</p>
+                        </blockquote>
+                        <div class="customer">
+                            <div class="customer-avatar" aria-hidden="true">E</div>
+                            <div class="customer-info">
+                                <h4>Emma Wilson</h4>
+                                <span>Coffee Lover</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="testimonial-dots" role="tablist" aria-label="Testimonial navigation">
+                    <button class="dot active" role="tab" aria-selected="true" aria-controls="testimonial-1" aria-label="View testimonial 1"></button>
+                    <button class="dot" role="tab" aria-selected="false" aria-controls="testimonial-2" aria-label="View testimonial 2"></button>
+                    <button class="dot" role="tab" aria-selected="false" aria-controls="testimonial-3" aria-label="View testimonial 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="contact-title">Visit Us</h2>
+                    <p>Come and experience the perfect cup</p>
+                </header>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <article class="info-card">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <h3>Location</h3>
+                            <address>
+                                123 Coffee Street<br>
+                                Downtown District<br>
+                                New York, NY 10001
+                            </address>
+                        </article>
+                        
+                        <article class="info-card">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <h3>Hours</h3>
+                            <p>
+                                Monday - Friday: 6:00 AM - 8:00 PM<br>
+                                Saturday - Sunday: 7:00 AM - 9:00 PM
+                            </p>
+                        </article>
+                        
+                        <article class="info-card">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <h3>Contact</h3>
+                            <p>
+                                Phone: <a href="tel:+15551234567">(555) 123-4567</a><br>
+                                Email: <a href="mailto:hello@artisancoffee.com">hello@artisancoffee.com</a>
+                            </p>
+                        </article>
+                    </div>
+                    
+                    <div class="newsletter">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for special offers and new blends</p>
+                        <form class="newsletter-form" novalidate>
+                            <label for="newsletter-email" class="sr-only">Email address</label>
+                            <input 
+                                type="email" 
+                                id="newsletter-email"
+                                placeholder="Enter your email" 
+                                required 
+                                aria-describedby="email-error"
+                            >
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                            <div id="email-error" class="error-message" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-coffee" aria-hidden="true"></i>
+                    <span>Artisan Coffee</span>
+                </div>
+                <div class="social-links" role="navigation" aria-label="Social media">
+                    <a href="#" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Subscribe to our YouTube channel">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Artisan Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Screen reader only class for accessibility -->
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        .error-message {
+            display: none;
+            color: #f44336;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script src="script-enhanced.js" defer></script>
+    
+    <!-- Service Worker for offline functionality (optional) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>
