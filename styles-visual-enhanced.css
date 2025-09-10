@@ -1,0 +1,235 @@
+/* Enhanced CSS with Image Backgrounds and Visual Elements */
+
+/* Coffee-themed gradient backgrounds for menu items */
+.menu-image.espresso {
+    background: linear-gradient(135deg, #3C1810 0%, #8B4513 100%);
+    background-image: 
+        radial-gradient(circle at 30% 40%, rgba(139, 69, 19, 0.8) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.4) 0%, transparent 50%);
+    position: relative;
+}
+
+.menu-image.espresso::after {
+    content: "☕";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.menu-image.latte {
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #F5DEB3 100%);
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(245, 222, 179, 0.6) 0%, transparent 70%);
+    position: relative;
+}
+
+.menu-image.latte::after {
+    content: "🥛";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.4;
+}
+
+.menu-image.cappuccino {
+    background: linear-gradient(135deg, #8B4513 0%, #CD853F  50%, #F5F5DC 100%);
+    background-image: 
+        radial-gradient(circle at 50% 30%, rgba(245, 245, 220, 0.7) 0%, transparent 60%);
+    position: relative;
+}
+
+.menu-image.cappuccino::after {
+    content: "☕";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.3;
+    transform: translate(-50%, -50%) rotate(15deg);
+}
+
+.menu-image.americano {
+    background: linear-gradient(135deg, #2F1B14 0%, #8B4513 100%);
+    background-image: 
+        radial-gradient(circle at 70% 30%, rgba(139, 69, 19, 0.6) 0%, transparent 70%);
+    position: relative;
+}
+
+.menu-image.americano::after {
+    content: "☕";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.4;
+}
+
+.menu-image.mocha {
+    background: linear-gradient(135deg, #3C1810 0%, #8B4513 50%, #D2691E 100%);
+    background-image: 
+        radial-gradient(circle at 40% 60%, rgba(210, 180, 140, 0.5) 0%, transparent 70%);
+    position: relative;
+}
+
+.menu-image.mocha::after {
+    content: "🍫";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.4;
+}
+
+.menu-image.cold-brew {
+    background: linear-gradient(135deg, #1C1C1C 0%, #4A4A4A 50%, #8B4513 100%);
+    background-image: 
+        radial-gradient(circle at 30% 70%, rgba(135, 206, 235, 0.3) 0%, transparent 50%);
+    position: relative;
+}
+
+.menu-image.cold-brew::after {
+    content: "🧊";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.4;
+}
+
+/* Enhanced Hero Section with CSS Art */
+.hero {
+    background: linear-gradient(135deg, 
+        rgba(139, 69, 19, 0.9) 0%, 
+        rgba(160, 82, 45, 0.8) 50%, 
+        rgba(210, 180, 140, 0.7) 100%
+    );
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(139, 69, 19, 0.3) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Coffee Beans Animation in About Section */
+.about-image .coffee-beans {
+    background: radial-gradient(circle, #8B4513 20%, #A0522D 40%, #CD853F 60%, transparent 80%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image .coffee-beans::before,
+.about-image .coffee-beans::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: #3C1810;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.about-image .coffee-beans::before {
+    top: 30%;
+    left: 40%;
+    animation-delay: 0s;
+}
+
+.about-image .coffee-beans::after {
+    top: 60%;
+    right: 35%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Add coffee bean pattern */
+.coffee-beans {
+    position: relative;
+}
+
+.coffee-beans::before {
+    content: '☕ ☕ ☕';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Enhanced testimonials with better visual appeal */
+.testimonials {
+    background: linear-gradient(135deg, 
+        rgba(245, 245, 220, 0.1) 0%, 
+        rgba(139, 69, 19, 0.05) 100%
+    );
+    background-image: 
+        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm-34 3c2.762 0 5-2.238 5-5s-2.238-5-5-5-5 2.238-5 5 2.238 5 5 5zm-27-27c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10zm79-5c0 8.284-6.716 15-15 15s-15-6.716-15-15 6.716-15 15-15 15 6.716 15 15z' fill='%23D4AF37' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Contact section enhancement */
+.contact {
+    background: linear-gradient(135deg, 
+        rgba(139, 69, 19, 0.03) 0%, 
+        rgba(212, 175, 55, 0.05) 100%
+    );
+}
+
+/* Add visual enhancement to info cards */
+.info-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8B4513 0%, #D4AF37 100%);
+}
+
+/* Footer enhancement */
+.footer {
+    background: linear-gradient(135deg, 
+        rgba(139, 69, 19, 0.95) 0%, 
+        rgba(92, 51, 23, 1) 100%
+    );
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        #D4AF37 20%, 
+        #D4AF37 80%, 
+        transparent 100%
+    );
+}
